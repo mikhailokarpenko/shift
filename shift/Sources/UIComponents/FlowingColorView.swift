@@ -1,7 +1,3 @@
-//
-// Copyright © 2023 Michael Karpenko. All rights reserved.
-//
-
 import SwiftUI
 
 public struct FlowingColorView: View {
@@ -35,10 +31,4 @@ public struct FlowingColorView: View {
     }
     
     public init() {}
-}
-
-struct FlowingColorView_Previews: PreviewProvider {
-    static var previews: some View {
-        FlowingColorView().edgesIgnoringSafeArea(.all)
-    }
 }

@@ -11,8 +11,14 @@ let package = Package(
             name: "WelcomeFeature",
             targets: ["WelcomeFeature"]),
         .library(
+            name: "ArticlesFeature",
+            targets: ["ArticlesFeature"]),
+        .library(
             name: "UIComponents",
-            targets: ["UIComponents"])
+            targets: ["UIComponents"]),
+        .library(
+            name: "Models",
+            targets: ["Models"])
     ],
     dependencies: [
         .package(
@@ -27,7 +33,16 @@ let package = Package(
                 .product(name: "ComposableArchitecture",
                          package: "swift-composable-architecture")]),
         .target(
+            name: "ArticlesFeature",
+            dependencies: [
+                "Models",
+                .product(name: "ComposableArchitecture",
+                         package: "swift-composable-architecture")]),
+        .target(
             name: "UIComponents",
+            dependencies: []),
+        .target(
+            name: "Models",
             dependencies: [])
     ]
 )

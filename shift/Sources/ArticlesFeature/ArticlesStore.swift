@@ -1,28 +1,26 @@
 import Foundation
+import Models
 import ComposableArchitecture
 
-public struct WelcomeFeature: ReducerProtocol {
+public struct ArticlesFeature: ReducerProtocol {
     //MARK: - State
     
     public struct State: Equatable {
-        public init() {}
+        var articles: [Article]
+        public init(articles: [Article]) {
+            self.articles = articles
+        }
     }
 
     //MARK: - Action
 
     public enum Action: Equatable {
-        case enter
     }
 
     //MARK: - Reducer
 
     public var body: some ReducerProtocol<State, Action> {
-        Reduce { state, action in
-            switch action {
-            case .enter:
-                return .none
-            }
-        }
+        EmptyReducer()
     }
     
     public init() {}

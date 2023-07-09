@@ -1,10 +1,3 @@
-//
-//  shiftApp.swift
-//  shift
-//
-//  Created by Mike Karpenko on 7/8/23.
-//
-
 import ComposableArchitecture
 import SwiftUI
 import WelcomeFeature

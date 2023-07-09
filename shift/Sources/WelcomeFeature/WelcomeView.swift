@@ -1,7 +1,3 @@
-//
-// Copyright © 2023 Michael Karpenko. All rights reserved.
-// 
-
 import SwiftUI
 import UIComponents
 import ComposableArchitecture
